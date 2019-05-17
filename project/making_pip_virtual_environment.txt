@@ -1,0 +1,55 @@
+You might also have several versions of Python installed on your system. The following command will help you get a list of all Python versions you have on your system:
+$ apt list --installed | grep python
+
+
+To check python version:
+$ python3 --version
+
+
+sudo apt-get update
+
+
+
+sudo apt-get upgrade python3
+
+
+
+To install python3:
+sudo apt-get install python3
+
+
+
+Before installing pip, you will need to add a few prerequisites that will help you in setting up your virtual space. Run the following command as sudo in order to install the build-essential, libssl-dev, libffi-dev and python-dev packages to your system:
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+
+
+
+
+You can verify if pip3 is installed on your system or not simply by checking its version number. Please run the following command to check the version:
+$ pip3 -V
+
+
+If your output suggests that pip is not installed on your system, please run the following commands as sudo to install the latest pip3 package:
+$ sudo apt-get update
+
+And then,
+$ sudo apt install python3-pip
+
+
+In order to create the virtual environment, you need the Python3-venv package installed on your system. Please run the following command as sudo in order to install it:
+$ sudo apt install -y python3-venv
+
+
+
+In the environments directory, we will be creating a new virtual environment where you can write your Python programs and create projects.
+Syntax:
+$ python3 -m venv environment_name
+
+
+
+To activate environment:
+source sample_environment/bin/activate
+
+
+To deactivate environment:
+deactivate
